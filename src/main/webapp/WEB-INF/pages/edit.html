@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+<h1>Change User</h1>
+<form action="/edit" method="post">
+    <input type="hidden" name="id" th:value="${userId}">
+    <table>
+        <td>Name:</td>
+        <td>Password:</td>
+        <tr>
+            <td><input type="text" name="name"></td>
+            <td><input type="password" name="password"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="submit">Save</button>
+</form>
+<div id="output"></div>
+<a href="/">Back</a>
+</body>
+</html>
