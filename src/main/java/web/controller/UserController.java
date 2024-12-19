@@ -56,7 +56,7 @@ public class UserController {
 
 
     @GetMapping(value = "/edit")
-    public ModelAndView showEditForm(@RequestParam String id, Model model) {
+    public ModelAndView showEditForm(@RequestParam int id, Model model) {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("edit");
         model.addAttribute("userId", id);
